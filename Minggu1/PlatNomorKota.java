@@ -1,6 +1,5 @@
 package Minggu1;
 import java.util.Scanner;
-
 public class PlatNomorKota {
     public static void main(String[] args) {
         char[] KODE = {'A', 'B', 'D', 'E', 'F', 'G', 'H', 'L', 'N', 'T'};
