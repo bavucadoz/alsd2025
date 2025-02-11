@@ -20,16 +20,16 @@ public class Pemilihan {
         System.out.println("======================");
         System.out.println("======================");
 
-        if (nilaiTugas>100 && nilaiTugas<0) {
+        if (nilaiTugas>100 || nilaiTugas<0) {
             System.out.println("Nilai Tidak Valid");
         }
-        else if (nilaiKuis>100 && nilaiKuis<0) {
+        else if (nilaiKuis>100 || nilaiKuis<0) {
             System.out.println("Nilai Tidak Valid");
         }
-        else if (nilaiUTS>100 && nilaiUTS<0) {
+        else if (nilaiUTS>100 || nilaiUTS<0) {
             System.out.println("Nilai Tidak Valid");
         }
-        else if (nilaiUAS>100 && nilaiUAS<0) {
+        else if (nilaiUAS>100 || nilaiUAS<0) {
             System.out.println("Nilai Tidak Valid");
         } 
 
@@ -64,15 +64,18 @@ public class Pemilihan {
             System.out.println("Nilai huruf: E");
         }
 
+        if (nilaiAkhir>100 && nilaiAkhir<0) {
+            System.out.println("Nilai Tidak Valid");
+        }
         System.out.println("======================");
         System.out.println("======================");
 
         if (nilaiAkhir>=50 && nilaiAkhir<=100) {
             System.out.println("SELAMAT ANDA LULUS");
-        } else if (nilaiAkhir>=0 && nilaiAkhir<50) {
+        } if (nilaiAkhir>=0 && nilaiAkhir<50) {
             System.out.println("MAAF ANDA GAGAL");
-        } else {
-            System.out.println("Nilai Tidak Valid");
+        } if (nilaiAkhir<0 && nilaiAkhir>100) {
+            System.out.print("");
         }
         sc.close();
     }
