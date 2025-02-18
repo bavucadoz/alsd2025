@@ -5,7 +5,6 @@ public class Mahasiswa07 {
     String nim;
     String kelas;
     double ipk;
-}
 
 void tampilkanInformasi() {
     System.out.println("Nama: " + nama);
@@ -36,4 +35,5 @@ String nilaiKinerja () {
     } else {
         return "Kinerja kurang";
     }
+}
 }
