@@ -27,5 +27,18 @@ public class DosenDemo07 {
             System.out.println("Data Dosen ke-" + (i+1));
             arrayOfDosen07[i].cetakInfo();
         }
+
+        System.out.println("Data Semua Dosen:");
+        DataDosen07.dataSemuaDosen(arrayOfDosen07);
+        DataDosen07.jumlahDosenPerJenisKelamin(arrayOfDosen07);
+        System.out.println("----------------------------------");
+        DataDosen07.rerataUsiaDosenPerJenisKelamin(arrayOfDosen07);
+        System.out.println("----------------------------------");
+        DataDosen07.infoDosenPalingTua(arrayOfDosen07);
+        System.out.println("----------------------------------");
+        DataDosen07.infoDosenPalingMuda(arrayOfDosen07);
+        System.out.println("----------------------------------");
+
+        sc.close();
     }
 }
