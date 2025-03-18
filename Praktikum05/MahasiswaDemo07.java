@@ -31,7 +31,11 @@ public class MahasiswaDemo07 {
         System.out.println("Data mahasiswa setelah sorting berdasarkan IPK (DESC):");
         list.tampil();
 
-        System.out.println("Data mahasiswa yang sudah terurut menggunakan INSERTION SORT (ASC):");
+        System.out.println("Data mahasiswa yang sudah terurut menggunakan SELECTION SORT (ASC):");
+        list.insertionSort();
+        list.tampil();
+        
+        System.out.println("Data mahasiswa yang sudah terurut menggunakan INSERTION SORT (DESC):");
         list.insertionSort();
         list.tampil();
         sc.close();
