@@ -1,8 +1,13 @@
 package Praktikum05;
 
 public class MahasiswaBerprestasi07 {
-    Mahasiswa07 [] listMhs= new Mahasiswa07[5];
+    Mahasiswa07 [] listMhs;
     int idx;
+
+    public MahasiswaBerprestasi07(int jumMhs){
+        listMhs = new Mahasiswa07[jumMhs];
+        idx=0;
+    }
 
     void tambah (Mahasiswa07 m){
         if (idx<listMhs.length) {
@@ -14,8 +19,8 @@ public class MahasiswaBerprestasi07 {
     }
 
     void tampil (){
-        for (Mahasiswa07 m:listMhs){
-            m.tampilInformasi();
+        for (int i=0; i<idx; i++){
+            listMhs[i].tampilInformasi();
             System.out.println("-----------------------------------");
         }
     }
