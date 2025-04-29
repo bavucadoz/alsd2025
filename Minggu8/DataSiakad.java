@@ -60,8 +60,7 @@ public class DataSiakad {
     public void urutkanNilai() {
         for (int i = 0; i < daftarNilai.length - 1; i++) {
             for (int j = 0; j < daftarNilai.length - i - 1; j++) {
-                if (daftarNilai[j].hitungNilaiAkhir() < daftarNilai[j + 1].hitungNilaiAkhir()) {
-                    // Tukar posisi
+                if (daftarNilai[j].hitungNilaiAkhir() > daftarNilai[j + 1].hitungNilaiAkhir()) {
                     Penilaian temp = daftarNilai[j];
                     daftarNilai[j] = daftarNilai[j + 1];
                     daftarNilai[j + 1] = temp;
