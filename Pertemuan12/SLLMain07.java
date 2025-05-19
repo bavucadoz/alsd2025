@@ -17,5 +17,17 @@ public class SLLMain07 {
         sll.insertAfter("Dirga", mhs3);
         sll.insertAt(2, mhs2);
         sll.print();
+
+        System.out.println("data index 1 : ");
+        sll.getData(1);
+
+        System.out.println("data mahasiswa an Bimon berada pada indeks : "+sll.indexOf("bimon"));
+        System.out.println();
+
+        sll.removeFirst();
+        sll.removeLast();
+        sll.print();
+        sll.removeAt(0);
+        sll.print();
     }
 }
