@@ -17,6 +17,9 @@ public class MainDoubleLinkedList {
         dll.print();
         System.out.println("Size : "+dll.size());
         System.out.println("==============================");
+        System.out.println("Data awal pada Linked Lists adalah: " + dll.getFirst());
+        System.out.println("Data akhir pada Linked Lists adalah: " + dll.getLast());
+        System.out.println("Data indeks ke-1 pada Linked Lists adalah: " + dll.get(1));
         dll.clear();
         dll.print();
         System.out.println("Size : "+dll.size());
