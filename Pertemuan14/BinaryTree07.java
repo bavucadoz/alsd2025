@@ -166,4 +166,52 @@ public class BinaryTree07 {
             }
         }
     }
+
+    public void addRekursif(Mahasiswa07 mhs) {
+        root = addRekursif(root, mhs);
+    }
+
+    public Node07 addRekursif(Node07 current, Mahasiswa07 mhs) {
+        if (current == null) {
+            return new Node07(mhs);
+        }
+        if (mhs.ipk < current.mahasiswa.ipk) {
+            current.left = addRekursif(current.left, mhs);
+        } else {
+            current.right = addRekursif(current.right, mhs);
+        }
+        return current;
+    }
+
+    public Mahasiswa07 cariMinIPK() {
+        Node07 current = root;
+        if (current == null) {
+            return null;
+        } 
+        while (current.left != null) {
+            current = current.left;
+        }
+        return current.mahasiswa;
+    }
+
+    public Mahasiswa07 cariMaxIPK() {
+        Node07 current = root;
+        if (current == null) {
+            return null;
+        }
+        while (current.right != null) {
+            current = current.right;
+        }
+        return current.mahasiswa;
+    }
+
+    public void tampilMahasiswaIPKdiAtas(Node07 node, double ipkBatas) {
+        if (node != null) {
+            tampilMahasiswaIPKdiAtas(node.left, ipkBatas);
+            if (node.mahasiswa.ipk > ipkBatas) {
+                node.mahasiswa.tampilInformasi();
+            }
+            tampilMahasiswaIPKdiAtas(node.right, ipkBatas);
+        }
+    }
 }
