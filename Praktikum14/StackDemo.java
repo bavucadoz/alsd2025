@@ -28,5 +28,12 @@ public class StackDemo {
         }
 
         System.out.println(books);
+
+        int posisi = books.search(book1);  
+        if (posisi != -1) {
+            System.out.println("Book ditemukan di posisi ke-" + posisi);
+        } else {
+            System.out.println("Book tidak ditemukan di stack.");
+        }
     }
 }
